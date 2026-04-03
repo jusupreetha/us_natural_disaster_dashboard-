@@ -72,8 +72,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ================= LOAD DATA =================
-raw_df = pd.read_csv("database.csv")              # before cleaning
-clean_df = pd.read_csv("usnd_cleaned.csv")        # after cleaning
+raw_df = pd.read_csv("disaster_dashboard/database.csv")              # before cleaning
+clean_df = pd.read_csv("disaster_dashboard/usnd_cleaned.csv")        # after cleaning
 
 clean_df["date"] = pd.to_datetime(clean_df["date"])
 clean_df["year"] = clean_df["date"].dt.year
